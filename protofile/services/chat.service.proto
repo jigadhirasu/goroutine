@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package ding4;
+
+option go_package = "github.com/jigadhirasu/goroutine/backend/pb";
+
+import "protofile/messages/request.proto";
+
+service Chat {
+    rpc Send(Request) returns (Reply);
+    rpc Broadcast(Request) returns (Reply);
+}

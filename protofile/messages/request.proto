@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package ding4;
+
+option go_package = "github.com/jigadhirasu/goroutine/backend/pb";
+
+message Request {
+    string to = 1;
+    string message = 2;
+}
+
+message Reply {
+    string from = 1;
+    string message = 2;
+}
